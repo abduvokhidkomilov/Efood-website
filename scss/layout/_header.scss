@@ -1,0 +1,85 @@
+.header{
+    color: white;
+    background-image: linear-gradient(rgb(0,0,0,0.88),rgb(0,0,0,0.8)), url(../images/jpg/bgHeader.jpg);
+    background-size: cover;
+}
+.hero{
+    height: 60rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    @include responsive(m-tablet) {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    &__right{
+        transition: 2s linear;
+    }
+    &__right img {
+        @include responsive(tablet) {
+            width: 450px;
+            height: 450px;
+       }
+       @include responsive(phone) {
+        width: 320px;
+        height: 320px;
+   }
+    }
+    &__right:hover{
+        transform: translate(150px);
+        @include responsive(tablet){
+            transform: translate(50px);
+        }
+        
+    }
+    h1 {
+        font-size: 5.8rem;
+        margin-bottom: 2.3rem;
+        line-height: 7.8rem;
+        @include responsive(tablet){
+            font-size: 4.8rem;
+            line-height: 6rem;
+            margin-bottom: 2rem;
+        }
+        @include responsive(m-tablet) {
+            font-size: 3.8rem;
+            line-height: 4rem;
+           
+       }
+        span {
+            color: rgb(3, 173, 3);
+        }
+    }
+    p{
+        font-size: 2rem;
+        margin-bottom: 5.8rem;
+        @include responsive(tablet) {
+            margin-bottom: 4.8rem;
+       }
+       @include responsive(m-tablet) {
+        font-size: 1.5rem;
+   }
+      
+    }
+    &__ancers {
+        @include responsive(tablet) {
+           display: flex;
+           flex-direction: column;
+           gap: 3rem;
+       }
+    }
+    .explore {
+        padding: 1.4rem 2.1rem;
+        margin-right: 3rem;
+        color:  whitesmoke ;
+        @include responsive(tablet) {
+            margin-right: 2rem;
+       }
+    }
+    .explore:hover {
+        color: $ancer-hover ;
+    }
+    
+}
