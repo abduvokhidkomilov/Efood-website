@@ -64,8 +64,9 @@
       
     }
     &__ancers {
+        display: flex;
+        
         @include responsive(tablet) {
-           display: flex;
            flex-direction: column;
            gap: 3rem;
        }

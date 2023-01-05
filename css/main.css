@@ -463,9 +463,11 @@ body {
     font-size: 1.5rem;
   }
 }
+.hero__ancers {
+  display: flex;
+}
 @media screen and (max-width: 890px) {
   .hero__ancers {
-    display: flex;
     flex-direction: column;
     gap: 3rem;
   }
