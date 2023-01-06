@@ -485,6 +485,9 @@ body {
 .hero .explore:hover {
   color: #FF6838;
 }
+.hero .download:hover {
+  color: #FF6838;
+}
 
 .navbar {
   height: 7.2rem;

@@ -4,12 +4,14 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
+    // position: fixed;
     @include responsive(phone) {
         justify-content: center;
     }
 
     ul{
         display: flex;
+
         gap: 5.6rem;
         @include responsive(tablet) {
             gap: 3rem ;
